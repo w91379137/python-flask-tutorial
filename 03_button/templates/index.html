@@ -1,0 +1,15 @@
+{% for button_info in button_info_list %}
+
+<button
+  style="
+    position:absolute; 
+    left: {{button_info.left}}; 
+    top: {{button_info.top}};
+    width: 30px;
+    height: 30px;
+    "
+>
+  {{button_info.title}}
+</button>
+
+{% endfor %}
